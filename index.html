@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <section class="auth-sec h-screen grid place-content-center overflow-hidden">
+        <div class="container max-w-[1400px] w-full" id="container">
+            <div class="authBox relative w-[850px] h-[500px] bg-white overflow-hidden">
+                <div class="form-container sign-up-container">
+                    <form class="h-full flex flex-col items-center justify-center " id="registerForm"
+                        onsubmit="register(event)">
+                        <h1>Create Account</h1>
+                        <span>or use your email for registration</span>
+                        <div class="infield">
+                            <input type="text" name="fullName" placeholder="Name" />
+                            <label></label>
+                        </div>
+                        <div class="infield">
+                            <input type="email" placeholder="Email" name="email" />
+                            <label></label>
+                        </div>
+                        <div class="infield">
+                            <input type="password" name="password" placeholder="Password" />
+                            <label></label>
+                        </div>
+                        <button class="btn" type="submit">Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form class="h-full flex flex-col items-center justify-center " id="loginForm">
+                        <h1>Sign in</h1>
+                        <span>or use your account</span>
+                        <div class="infield">
+                            <input type="email" placeholder="Email" name="email" />
+                            <label></label>
+                        </div>
+                        <div class="infield">
+                            <input type="password" placeholder="Password" />
+                            <label></label>
+                        </div>
+                        <a href="#" class="forgot">Forgot your password?</a>
+                        <button class="btn">Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container" id="overlayCon">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Hello again!</h1>
+                            <p>To keep in touch, please login with your credentials</p>
+                            <button>Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello again!</h1>
+                            <p>Enter your credentials and start account with us</p>
+                            <button id="signUpBtn">Sign Up</button>
+                        </div>
+                    </div>
+                    <button id="overlayBtn"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
