@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+
+  <body class="bg-[#081028] text-white font-sans">
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="w-72 bg-[#081028] p-6 flex flex-col justify-between border-r border-[#0B1739] shadow-[0px_8px_28px_0px_rgba(1,5,17,0.3)]"
+      >
+        <div>
+          <div class="flex items-center gap-3 mb-10 w-[170.4px]">
+            <a href="" class="w-full h-full"
+              ><img
+                src="./assets/Logo.png"
+                alt=""
+                class="w-full h-full object-cover"
+            /></a>
+          </div>
+
+          <!-- Menu -->
+          <nav class="space-y-2 text-sm">
+            <!-- Active -->
+            <div class="flex items-center mb-10">
+              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.1727 3.31095C13.3285 1.7969 10.6715 1.7969 8.82732 3.31095L3.46186 7.71593C2.53641 8.47571 2 9.61012 2 10.8075V18.0001C2 20.2092 3.79086 22.0001 6 22.0001H18C20.2091 22.0001 22 20.2092 22 18.0001V10.8075C22 9.61012 21.4636 8.47571 20.5381 7.71593L15.1727 3.31095Z"
+                  fill="#775ada"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold ml-1.5 mt-0.5 text-[#775ada]">
+                Dashboard
+              </h3>
+            </div>
+            <a
+              href=""
+              class="flex items-center gap-3 p-4 rounded-1 border-l-5 border-[#775ada] bg-[#0A1330] text-white! font-medium"
+            >
+              Home
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 pl-6 pr-8 pt-8 overflow-y-auto">
+        <!-- Header -->
+        <div class="flex justify-between mb-1">
+          <div class="pt-5">
+            <h2 class="text-2xl font-semibold text-white">
+              Welcome back, John
+            </h2>
+            <p class="text-[#AEB9E1] mt-2.5!">
+              Track product performance and monitor sales growth.
+            </p>
+          </div>
+          <div class="flex items-center -mt-10 gap-4">
+            <button
+              class="px-5 text-sm rounded-md font-semibold py-2 bg-linear-to-tr from-[#775ada] to-[#5b3fc4] flex items-center gap-2"
+            >
+              Log out <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v2a1 1 0 1 1-2 0V6H4v12h9v-2a1 1 0 1 1 2 0v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm15.293 2.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L18.586 13H9a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 0 1 0-1.414z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+            <div class="w-10 h-10 rounded-full bg-[#775ada]"></div>
+          </div>
+        </div>
+
+        <!-- Transaction History -->
+        <div
+          class="bg-[#0A1330] p-6 rounded-xl h-[76vh] border border-[#101426]"
+        >
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-white text-lg font-semibold">Product List</h3>
+            <button
+              class="px-5 text-sm rounded-md font-semibold py-2 bg-linear-to-tr from-[#775ada] to-[#5b3fc4] flex items-center gap-1.5"
+            >
+              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                width="17px"
+                height="17px"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M9 17a1 1 0 102 0v-6h6a1 1 0 100-2h-6V3a1 1 0 10-2 0v6H3a1 1 0 000 2h6v6z"
+                />
+              </svg>
+              Add Product
+            </button>
+          </div>
+
+          <!-- Header Row -->
+          <div
+            class="grid grid-cols-5 text-[#AEB9E1] text-sm pb-3 border-b border-[#2A2A30] font-semibold"
+          >
+            <div>Asset</div>
+            <div>Price</div>
+            <div>Date</div>
+            <div>Status</div>
+            <div>Action</div>
+          </div>
+
+          <!-- Row 1 -->
+          <div
+            class="grid grid-cols-5 items-center py-4 border-b border-[#2A2A30] text-sm"
+          >
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[#775ada] rounded-full"></div>
+              <span>Tesla</span>
+            </div>
+            <div>$30,982</div>
+            <div>Dec 13, 2023</div>
+            <div>
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-green-500/20 text-green-400"
+              >
+                Success
+              </span>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div
+            class="grid grid-cols-5 items-center py-4 border-b border-[#2A2A30] text-sm"
+          >
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-yellow-500 rounded-full"></div>
+              <span>MTOC</span>
+            </div>
+            <div>$10,450</div>
+            <div>Dec 10, 2023</div>
+            <div>
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-yellow-500/20 text-yellow-400"
+              >
+                Pending
+              </span>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="grid grid-cols-5 items-center py-4 text-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-red-500 rounded-full"></div>
+              <span>AKBG</span>
+            </div>
+            <div>$22,650</div>
+            <div>Dec 08, 2023</div>
+            <div>
+              <span
+                class="px-3 py-1 text-xs rounded-full bg-red-500/20 text-red-400"
+              >
+                Declined
+              </span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

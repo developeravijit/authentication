@@ -1,10 +1,13 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 
 * {
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Mona Sans", sans-serif;
+}
 :root {
   --linear-grad: linear-gradient(to right, #c03535, #ff4b4b);
   --grad-clr1: #c03535;
@@ -44,13 +47,13 @@ input::placeholder {
   /* background-color: #5a556d; */
   /* background: url(../assets/signup-img.png) no-repeat center/cover; */
   position: relative;
-  font-family: "Poppins", sans-serif;
 }
 .auth-sec::before {
   content: "";
   position: absolute;
   inset: 0;
   background: url(../assets/signup-img.png) no-repeat center/cover;
+  /* background: url(../assets/Signin-gif.gif) no-repeat center/cover; */
   filter: blur(10px);
   transform: scale(1.1); /* prevents edge cut after blur */
   z-index: -1;
