@@ -25,30 +25,37 @@ then npm run dev
         >
           <div class="form-container sign-up-container">
             <form
-              class="h-full flex flex-col items-center justify-center [&_input]:rounded-lg [&_input]:bg-[#3b364c]!"
+              class="h-full flex flex-col text-white items-center justify-center [&_input]:rounded-lg [&_input]:bg-[#3b364c]!"
               id="registerForm"
               onsubmit="register(event)"
             >
               <h1 class="font-bold text-white! text-4xl">Create Account</h1>
-              <span class="text-gray-400 my-4">or use your email for registration</span>
+              <span class="text-gray-400 my-4"
+                >or use your email for registration</span
+              >
               <div class="infield">
                 <input type="text" name="fullName" placeholder="Name" />
+                <label></label>
                 <p id="nameError" class="errormsg text-red-700"></p>
               </div>
               <div class="infield">
                 <input type="email" placeholder="Email" name="email" />
+                <label></label>
                 <p id="emailError" class="errormsg text-red-700"></p>
               </div>
               <div class="infield">
                 <input type="password" name="password" placeholder="Password" />
+                <label></label>
                 <p id="passError" class="errormsg text-red-700"></p>
               </div>
-              <button class="btn w-full rounded-lg" type="submit">Sign Up</button>
+              <button class="btn w-full rounded-lg" type="submit">
+                Sign Up
+              </button>
             </form>
           </div>
           <div class="form-container sign-in-container">
             <form
-              class="h-full flex flex-col items-center justify-center [&_input]:rounded-lg [&_input]:bg-[#3b364c]!"
+              class="h-full flex flex-col text-white items-center justify-center [&_input]:rounded-lg [&_input]:bg-[#3b364c]!"
               id="loginForm"
             >
               <h1 class="font-bold text-white! text-4xl">Sign in</h1>
