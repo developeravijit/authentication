@@ -254,6 +254,9 @@
   .text-red-700 {
     color: var(--color-red-700);
   }
+  .text-white {
+    color: var(--color-white);
+  }
   .text-white\! {
     color: var(--color-white) !important;
   }
@@ -304,7 +307,7 @@ input::placeholder {
   position: absolute;
   width: 50%;
   height: 100%;
-  padding: 0px 40px;
+  padding: 0px 20px;
   transition: all 0.6s ease-in-out;
 }
 .sign-up-container {
@@ -357,11 +360,11 @@ label {
   transform: translateX(-50%);
   width: 0%;
   height: 2px;
-  background: var(--linear-grad);
+  background: var(--grad-clr2);
   transition: width 0.3s ease;
 }
 input:focus ~ label {
-  width: 100%;
+  width: 97%;
 }
 a {
   color: #333;
