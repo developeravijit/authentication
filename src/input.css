@@ -5,17 +5,18 @@
     box-sizing: border-box;
 }
 
-/* :root {
+:root {
     --linear-grad: linear-gradient(to right, #c03535, #ff4b4b);
     --grad-clr1: #c03535;
     --grad-clr2: #ff4b4b;
-} */
+}
 
+/* 
 :root {
     --linear-grad: linear-gradient(to right, #141E30, #243B55);
     --grad-clr1: #141E30;
     --grad-clr2: #243B55;
-}
+} */
 
 /* :root {
     --linear-grad: linear-gradient(to right, #1E3023, #3B5534);
@@ -36,9 +37,10 @@
 } */
 
 .auth-sec {
-    background: linear-gradient(to right, #1E3023, #3B5534);
+    background: linear-gradient(to right, #301E23, #55343B);
     font-family: 'Poppins', sans-serif;
 }
+
 
 
 .container {
@@ -74,6 +76,10 @@ form {
 
 h1 {
     color: #333;
+}
+
+.errormsg {
+    margin: 0 !important;
 }
 
 .social-container {

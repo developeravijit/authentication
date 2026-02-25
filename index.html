@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
+<!-- 
+add this in script tag in package json file
+"dev": " npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+then run 
+npm install -D tailwindcss
+then npm run dev
+-->
+
 <body>
     <section class="auth-sec h-screen grid place-content-center overflow-hidden">
         <div class="container max-w-[1400px] w-full" id="container">
@@ -19,15 +27,15 @@
                         <span>or use your email for registration</span>
                         <div class="infield">
                             <input type="text" name="fullName" placeholder="Name" />
-                            <label></label>
+                            <p id="nameError" class=" errormsg text-red-700"></p>
                         </div>
                         <div class="infield">
                             <input type="email" placeholder="Email" name="email" />
-                            <label></label>
+                            <p id="emailError" class=" errormsg text-red-700"></p>
                         </div>
                         <div class="infield">
                             <input type="password" name="password" placeholder="Password" />
-                            <label></label>
+                            <p id="passError" class=" errormsg text-red-700"></p>
                         </div>
                         <button class="btn" type="submit">Sign Up</button>
                     </form>
