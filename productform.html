@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Add Product</title>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen p-10">
+    <div class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <div class="mb-8">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4 tracking-tight">Add New Product</h1>
+        <p class="text-sm text-gray-500">Add a new product to your store</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- LEFT SIDE -->
+        <form action="" class="col-span-2">
+          <div class=" space-y-6">
+            <!-- Name & Description -->
+            <div class="bg-white rounded-xl shadow-sm p-6 space-y-4 mb-6">
+              <h2 class="text-lg/10 font-semibold text-gray-700">
+                Name and Description
+              </h2>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-600 mb-2">
+                  Product Name
+                </label>
+                <input
+                  type="text"
+                  name="productName"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+                  placeholder="Enter product name"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-600 mb-2">
+                  Product ID
+                </label>
+                <input
+                  type="text"
+                  name="productName"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+                  placeholder="Enter product ID"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-600 mb-2">
+                  Product Description
+                </label>
+                <textarea
+                  name="description"
+                  rows="4"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+                  placeholder="Enter product description"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <!-- Product Pricing -->
+            <div class="bg-white rounded-xl shadow-sm px-6 py-8 space-y-4">
+              <h2 class="text-lg font-semibold text-gray-700">
+                Product Pricing
+              </h2>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-600 mb-2">
+                    Price
+                  </label>
+                  <input
+                    type="number"
+                    name="price"
+                    placeholder="Enter Price"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-600 mb-2">
+                    Discount
+                  </label>
+                  <input
+                    type="number"
+                    name="discount"
+                    placeholder="Discount"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                class="w-full py-3 bg-[#775ada] text-white rounded-xl font-medium hover:bg-black hover:text-white transition"
+              >
+                + Add Product
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- Category -->
+        <div class="space-y-6">
+          <div class="bg-white rounded-xl shadow-sm p-6 space-y-4">
+            <h2 class="text-lg font-semibold text-gray-700">Category</h2>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-600 mb-2">
+                Product Category
+              </label>
+              <select
+                name="category"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+              >
+                <option value="">Select Category</option>
+                <option>Men</option>
+                <option>Women</option>
+                <option>Kid</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-600 mb-2">
+                Status
+              </label>
+              <select
+                name="subCategory"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+              >
+                <option value="">Select status</option>
+                <option>Complete</option>
+                <option>Processing</option>
+                <option>Rejected</option>
+              </select>
+            </div>
+          </div>
+          <!-- Product Stock -->
+          <div class="bg-white rounded-xl shadow-sm px-6 py-6 space-y-4">
+            <h2 class="text-lg font-semibold text-gray-700">Product Pricing</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-600 mb-2">
+                  Product in Stock
+                </label>
+                <input
+                  type="number"
+                  name="price"
+                  placeholder="Enter quantity"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-600 mb-2">
+                  Minimum Stock
+                </label>
+                <input
+                  type="number"
+                  name="discount"
+                  placeholder="100"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[#775ada] outline-none"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Product Image -->
+          <div class="bg-white rounded-xl shadow-sm p-6 space-y-4">
+            <h2 class="text-lg font-semibold text-gray-700">Product Image</h2>
+
+            <input
+              type="file"
+              name="image"
+              class="w-full border-2 border-dashed border-[#775ada] rounded-xl p-6 text-sm text-gray-500"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
