@@ -1,481 +1,266 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DashBoard</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="./src/output.css" />
-  </head>
-  <body class="bg-gray-100 text-gray-800">
-    <div class="flex min-h-screen">
-      <!-- Sidebar -->
-      <aside
-        class="w-56 bg-[#F9F9FB] shadow-md border-r border-[#D5D5D5] flex flex-col py-6 px-4 fixed top-0 left-0 h-full z-10"
-      >
-        <div
-          class="text-2xl font-extrabold tracking-tight text-[#775ada] mb-8 px-2"
-        >
-          DashStack
-        </div>
-        <nav class="flex flex-col gap-1">
-          <a
-            href="#"
-            class="flex items-center gap-2 px-4 py-3 text-black hover:bg-gray-50 text-sm font-semibold"
-          >
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <rect x="3" y="3" width="7" height="7" rx="1" />
-              <rect x="14" y="3" width="7" height="7" rx="1" />
-              <rect x="3" y="14" width="7" height="7" rx="1" />
-              <rect x="14" y="14" width="7" height="7" rx="1" />
-            </svg>
-            Dashboard
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DashBoard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 
-          <a
-            href="#"
-            class="flex items-center gap-2 px-4 py-3 rounded-lg bg-[#775ada] text-white! text-sm font-semibold"
-          >
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-              />
-            </svg>
-            Home
-          </a>
-        </nav>
-      </aside>
+  <link rel="stylesheet" href="./src/output.css" />
+</head>
 
-      <!-- Main -->
-      <div class="ml-56 flex-1 flex flex-col">
-        <!-- Topbar -->
-        <header
-          class="bg-[#F9F9FB] shadow-md border border-[#D5D5D5] h-16 flex items-center py-9 justify-between px-6 sticky top-0 z-10"
-        >
-          <div class="flex-1 max-w-md">
-            <div class="relative">
-              <form action="" class="p-0!">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  class="w-full pl-9 pr-4 py-2 bg-gray-200 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300"
-                />
-              </form>
-            </div>
-          </div>
-          <div class="flex items-center gap-5">
-            <div class="relative ">
-              <button
-                class="px-5 text-sm rounded-md cursor-pointer font-semibold text-white! py-3 bg-linear-to-tr from-[#775ada] to-[#5b3fc4] flex items-center gap-2"
-              >
-                Log out <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                <svg
-                  width="20px"
-                  height="20px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v2a1 1 0 1 1-2 0V6H4v12h9v-2a1 1 0 1 1 2 0v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm15.293 2.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L18.586 13H9a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 0 1 0-1.414z"
-                    fill="#fff"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="flex items-center gap-1 text-sm text-gray-600 cursor-pointer"
-            ></div>
-            <button class="flex items-center gap-2 cursor-pointer">
-              <?xml version="1.0" encoding="utf-8"?>
-              <svg
-                width="28px"
-                height="28px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="9" r="3" stroke="#000" stroke-width="1.5" />
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="#000"
-                  stroke-width="1.5"
-                />
-                <path
-                  d="M17.9691 20C17.81 17.1085 16.9247 15 11.9999 15C7.07521 15 6.18991 17.1085 6.03076 20"
-                  stroke="#000"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </button>
-          </div>
-        </header>
-
-        <!-- Page Content -->
-        <main class="p-6 flex-1">
-          <div class="flex justify-between items-center mb-3">
-            <h1 class="text-2xl font-bold text-gray-800 mb-6 tracking-tight">Product Lists</h1>
-            <a
-              href="productform.html"
-              class="px-5 text-sm rounded-md font-semibold text-white! py-3 tracking-tight bg-black flex items-center gap-2"
-            >
-              <span class="font-medium text-2xl/1!">+</span> Add Product
-            </a>
-          </div>
-
-          <!-- Filters -->
-          <div
-            class="bg-[#F9F9FB] shadow-md border border-[#D5D5D5] rounded-xl px-5 py-3 flex items-center gap-3 mb-6"
-          >
-            <svg
-              class="w-5 h-5 mt-1.5 text-gray-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 4h18M7 8h10M11 12h2"
-              />
-            </svg>
-            <span class="text-sm font-semibold text-gray-500 mr-1"
-              >Filter By</span
-            >
-            <div class="flex">
-              <button
-                id="dropdownDefaultButton"
-                data-dropdown-toggle="dropdown"
-                class="inline-flex items-center justify-center cursor-pointer text-gray-600 bg-brand box-border border border-[#D5D5D5] rounded-l-md hover:bg-brand-strong focus:ring-0 focus:ring-brand-medium shadow-xs font-semibold leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none hover:text-[#775ada]"
-                type="button"
-              >
-                Price
-                <svg
-                  class="w-4 h-4 ms-1.5 -me-0.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 9-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              <!-- Dropdown menu -->
-              <div
-                id="dropdown"
-                class="z-10 hidden bg-neutral-primary-medium bg-[#F9F9FB] border border-default-medium rounded-base shadow-lg w-44"
-              >
-                <ul
-                  class="p-2 text-sm text-body font-medium"
-                  aria-labelledby="dropdownDefaultButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Dashboard</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Settings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Earnings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Sign out</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <button
-                id="dropdownDefaultButton"
-                data-dropdown-toggle="dropdown2"
-                class="inline-flex items-center justify-center cursor-pointer text-gray-600 bg-brand box-border border border-[#D5D5D5] hover:bg-brand-strong focus:ring-0 focus:ring-brand-medium shadow-xs font-semibold leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none hover:text-[#775ada]"
-                type="button"
-              >
-                Category
-                <svg
-                  class="w-4 h-4 ms-1.5 -me-0.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 9-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              <!-- Dropdown menu -->
-              <div
-                id="dropdown2"
-                class="z-10 hidden bg-neutral-primary-medium bg-[#F9F9FB] border border-default-medium rounded-base shadow-lg w-44"
-              >
-                <ul
-                  class="p-2 text-sm text-body font-medium"
-                  aria-labelledby="dropdownDefaultButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Dashboard</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Settings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Earnings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Sign out</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <button
-                id="dropdownDefaultButton"
-                data-dropdown-toggle="dropdown3"
-                class="inline-flex items-center justify-center cursor-pointer text-gray-600 bg-brand box-border border border-[#D5D5D5] rounded-r-md hover:bg-brand-strong focus:ring-0 focus:ring-brand-medium shadow-xs font-semibold leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none hover:text-[#775ada]"
-                type="button"
-              >
-                Status
-                <svg
-                  class="w-4 h-4 ms-1.5 -me-0.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 9-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-              <!-- Dropdown menu -->
-              <div
-                id="dropdown3"
-                class="z-10 hidden bg-neutral-primary-medium bg-[#F9F9FB] border border-default-medium rounded-base shadow-lg w-44"
-              >
-                <ul
-                  class="p-2 text-sm text-body font-medium"
-                  aria-labelledby="dropdownDefaultButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Dashboard</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Settings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Earnings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!"
-                      >Sign out</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <button
-              class="flex items-center gap-1.5 text-sm text-orange-500 font-medium ml-1 hover:text-orange-600"
-            >
-              <svg
-                class="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                />
-              </svg>
-              Reset Filter
-            </button>
-          </div>
-
-          <div
-            class="bg-[#F9F9FB] shadow-md border border-[#D5D5D5] rounded-xl overflow-hidden min-h-screen"
-          >
-            <!-- Header -->
-            <div
-              class="grid grid-cols-[80px_1fr_1.6fr_130px_110px_130px] items-center gap-4 px-10 pt-6 pb-3 border-b border-[#D5D5D5]"
-            >
-              <span
-                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
-                >ID</span
-              >
-              <span
-                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
-                >Name</span
-              >
-              <span
-                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
-                >Address</span
-              >
-              <span
-                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
-                >Date</span
-              >
-              <span
-                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
-                >Type</span
-              >
-              <span
-                class="text-xs font-semibold text-gray-400 uppercase tracking-wider"
-                >Status</span
-              >
-            </div>
-            <div
-              class="grid grid-cols-[80px_1fr_1.6fr_130px_110px_130px] items-center gap-4 px-10 py-5 border-b border-[#D5D5D5] hover:bg-gray-50 transition-colors"
-            >
-              <span class="text-sm text-gray-500">00001</span>
-              <span class="text-sm font-medium text-gray-800"
-                >Christine Brooks</span
-              >
-              <span class="text-sm text-gray-500 truncate"
-                >089 Kutch Green Apt. 448</span
-              >
-              <span class="text-sm text-gray-600">04 Sep 2026</span>
-              <span class="text-sm text-gray-600">Electric</span>
-              <span
-                class="inline-block w-fit px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700"
-              >
-                Completed
-              </span>
-            </div>
-            <div
-              class="grid grid-cols-[80px_1fr_1.6fr_130px_110px_130px] items-center gap-4 px-10 py-5 border-b border-[#D5D5D5] hover:bg-gray-50 transition-colors"
-            >
-              <span class="text-sm text-gray-500">00002</span>
-              <span class="text-sm font-medium text-gray-800"
-                >Rosie Pearson</span
-              >
-              <span class="text-sm text-gray-500 truncate"
-                >979 Immanuel Ferry Suite 526</span
-              >
-              <span class="text-sm text-gray-600">28 May 2026</span>
-              <span class="text-sm text-gray-600">Book</span>
-              <span
-                class="inline-block w-fit px-3 py-1 rounded-full text-xs font-medium bg-violet-100 text-violet-700"
-              >
-                Processing
-              </span>
-            </div>
-            <div
-              class="grid grid-cols-[80px_1fr_1.6fr_130px_110px_130px] items-center gap-4 px-10 py-5 border-b border-[#D5D5D5] hover:bg-gray-50 transition-colors"
-            >
-              <span class="text-sm text-gray-500">00003</span>
-              <span class="text-sm font-medium text-gray-800"
-                >Darrell Caldwell</span
-              >
-              <span class="text-sm text-gray-500 truncate"
-                >8587 Frida Ports</span
-              >
-              <span class="text-sm text-gray-600">23 Nov 2026</span>
-              <span class="text-sm text-gray-600">Medicine</span>
-              <span
-                class="inline-block w-fit px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700"
-              >
-                Rejected
-              </span>
-            </div>
-          </div>
-        </main>
+<body class="bg-gray-100 text-gray-800">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside
+      class="w-56 bg-[#F9F9FB] shadow-md border-r border-[#D5D5D5] flex flex-col py-6 px-4 fixed top-0 left-0 h-full z-10">
+      <div class="text-2xl font-extrabold tracking-tight text-[#775ada] mb-8 px-2">
+        DashStack
       </div>
+      <nav class="flex flex-col gap-1">
+        <a href="#" class="flex items-center gap-2 px-4 py-3 text-black hover:bg-gray-50 text-sm font-semibold">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="7" height="7" rx="1" />
+            <rect x="14" y="3" width="7" height="7" rx="1" />
+            <rect x="3" y="14" width="7" height="7" rx="1" />
+            <rect x="14" y="14" width="7" height="7" rx="1" />
+          </svg>
+          Dashboard
+        </a>
+
+        <a href="#" class="flex items-center gap-2 px-4 py-3 rounded-lg bg-[#775ada] text-white! text-sm font-semibold">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          </svg>
+          Home
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <div class="ml-56 flex-1 flex flex-col">
+      <!-- Topbar -->
+      <header
+        class="bg-[#F9F9FB] shadow-md border border-[#D5D5D5] h-16 flex items-center py-9 justify-between px-6 sticky top-0 z-10">
+        <div class="flex-1 max-w-md">
+          <div class="relative">
+            <form action="" class="p-0!">
+              <input type="text" placeholder="Search"
+                class="w-full pl-9 pr-4 py-2 bg-gray-200 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" />
+            </form>
+          </div>
+        </div>
+        <h1 class="title text-[25px] font-bold text-gray-800 tracking-tight" id="userName"></h1>
+        <div class="flex items-center gap-5">
+          <div class="relative ">
+            <button onclick="logout()"
+              class="px-5 text-sm rounded-md cursor-pointer font-semibold text-white! py-3 bg-linear-to-tr from-[#775ada] to-[#5b3fc4] flex items-center gap-2">
+              Log out
+              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v2a1 1 0 1 1-2 0V6H4v12h9v-2a1 1 0 1 1 2 0v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm15.293 2.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L18.586 13H9a1 1 0 1 1 0-2h9.586l-1.293-1.293a1 1 0 0 1 0-1.414z"
+                  fill="#fff" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center gap-1 text-sm text-gray-600 cursor-pointer"></div>
+          <button class="flex items-center gap-2 cursor-pointer">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="9" r="3" stroke="#000" stroke-width="1.5" />
+              <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="1.5" />
+              <path d="M17.9691 20C17.81 17.1085 16.9247 15 11.9999 15C7.07521 15 6.18991 17.1085 6.03076 20"
+                stroke="#000" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <main class="p-6 flex-1">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6 tracking-tight">Product Lists</h2>
+          <a href="productform.html"
+            class="px-5 text-sm rounded-md font-semibold text-white! py-3 tracking-tight bg-black flex items-center gap-2">
+            <span class="font-medium text-2xl/1!">+</span> Add Product
+          </a>
+        </div>
+
+        <!-- Filters -->
+        <div class="bg-[#F9F9FB] shadow-md border border-[#D5D5D5] rounded-xl px-5 py-3 flex items-center gap-3 mb-6">
+          <svg class="w-5 h-5 mt-1.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18M7 8h10M11 12h2" />
+          </svg>
+          <span class="text-sm font-semibold text-gray-500 mr-1">Filter By</span>
+          <div class="flex">
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+              class="inline-flex items-center justify-center cursor-pointer text-gray-600 bg-brand box-border border border-[#D5D5D5] rounded-l-md hover:bg-brand-strong focus:ring-0 focus:ring-brand-medium shadow-xs font-semibold leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none hover:text-[#775ada]"
+              type="button">
+              Price
+              <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 9-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdown"
+              class="z-10 hidden bg-neutral-primary-medium bg-[#F9F9FB] border border-default-medium rounded-base shadow-lg w-44">
+              <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Settings</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Earnings</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Sign
+                    out</a>
+                </li>
+              </ul>
+            </div>
+
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown2"
+              class="inline-flex items-center justify-center cursor-pointer text-gray-600 bg-brand box-border border border-[#D5D5D5] hover:bg-brand-strong focus:ring-0 focus:ring-brand-medium shadow-xs font-semibold leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none hover:text-[#775ada]"
+              type="button">
+              Category
+              <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 9-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdown2"
+              class="z-10 hidden bg-neutral-primary-medium bg-[#F9F9FB] border border-default-medium rounded-base shadow-lg w-44">
+              <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Settings</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Earnings</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Sign
+                    out</a>
+                </li>
+              </ul>
+            </div>
+
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown3"
+              class="inline-flex items-center justify-center cursor-pointer text-gray-600 bg-brand box-border border border-[#D5D5D5] rounded-r-md hover:bg-brand-strong focus:ring-0 focus:ring-brand-medium shadow-xs font-semibold leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none hover:text-[#775ada]"
+              type="button">
+              Status
+              <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 9-7 7-7-7" />
+              </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdown3"
+              class="z-10 hidden bg-neutral-primary-medium bg-[#F9F9FB] border border-default-medium rounded-base shadow-lg w-44">
+              <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Settings</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Earnings</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded m-0!">Sign
+                    out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="flex items-center gap-1.5 text-sm text-orange-500 font-medium ml-1 hover:text-orange-600">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            Reset Filter
+          </button>
+        </div>
+
+        <div class="bg-[#F9F9FB] shadow-md border border-[#D5D5D5] rounded-xl overflow-hidden min-h-screen">
+          <!-- Header -->
+          <div
+            class="grid grid-cols-[80px_1fr_1.6fr_130px_110px_130px] items-center gap-4 px-10 pt-6 pb-3 border-b border-[#D5D5D5]">
+            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">ID</span>
+            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Name</span>
+            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Address</span>
+            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Date</span>
+            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Type</span>
+            <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Status</span>
+          </div>
+          <div
+            class="grid grid-cols-[80px_1fr_1.6fr_130px_110px_130px] items-center gap-4 px-10 py-5 border-b border-[#D5D5D5] hover:bg-gray-50 transition-colors">
+            <span class="text-sm text-gray-500">00001</span>
+            <span class="text-sm font-medium text-gray-800">Christine Brooks</span>
+            <span class="text-sm text-gray-500 truncate">089 Kutch Green Apt. 448</span>
+            <span class="text-sm text-gray-600">04 Sep 2026</span>
+            <span class="text-sm text-gray-600">Electric</span>
+            <span class="inline-block w-fit px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">
+              Completed
+            </span>
+          </div>
+          <div
+            class="grid grid-cols-[80px_1fr_1.6fr_130px_110px_130px] items-center gap-4 px-10 py-5 border-b border-[#D5D5D5] hover:bg-gray-50 transition-colors">
+            <span class="text-sm text-gray-500">00002</span>
+            <span class="text-sm font-medium text-gray-800">Rosie Pearson</span>
+            <span class="text-sm text-gray-500 truncate">979 Immanuel Ferry Suite 526</span>
+            <span class="text-sm text-gray-600">28 May 2026</span>
+            <span class="text-sm text-gray-600">Book</span>
+            <span class="inline-block w-fit px-3 py-1 rounded-full text-xs font-medium bg-violet-100 text-violet-700">
+              Processing
+            </span>
+          </div>
+          <div
+            class="grid grid-cols-[80px_1fr_1.6fr_130px_110px_130px] items-center gap-4 px-10 py-5 border-b border-[#D5D5D5] hover:bg-gray-50 transition-colors">
+            <span class="text-sm text-gray-500">00003</span>
+            <span class="text-sm font-medium text-gray-800">Darrell Caldwell</span>
+            <span class="text-sm text-gray-500 truncate">8587 Frida Ports</span>
+            <span class="text-sm text-gray-600">23 Nov 2026</span>
+            <span class="text-sm text-gray-600">Medicine</span>
+            <span class="inline-block w-fit px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">
+              Rejected
+            </span>
+          </div>
+        </div>
+      </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <script src="./logout.js"></script>
+</body>
+
 </html>

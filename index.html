@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css" />
-  </head>
+</head>
 
-  <!-- 
+<!-- 
 add this in script tag in package json file
 "dev": " npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
 then run 
@@ -15,81 +16,73 @@ npm install -D tailwindcss
 then npm run dev
 -->
 
-  <body>
-    <section
-      class="auth-sec h-screen grid place-content-center overflow-hidden"
-    >
-      <div class="container max-w-[1400px] w-full" id="container">
-        <div
-          class="authBox relative w-[850px] h-[500px] bg-[#081028] overflow-hidden"
-        >
-          <div class="form-container sign-up-container">
-            <form
-              class="h-full flex flex-col text-white items-center justify-center [&_input]:rounded-lg [&_input]:bg-[#141E38]!"
-              id="registerForm"
-              onsubmit="register(event)"
-            >
-              <h1 class="font-bold text-white! text-4xl">Create Account</h1>
-              <span class="text-gray-400 my-4"
-                >or use your email for registration</span
-              >
-              <div class="infield">
-                <input type="text" name="fullName" placeholder="Name" />
-                <label></label>
-                <p id="nameError" class="errormsg text-red-700"></p>
-              </div>
-              <div class="infield">
-                <input type="email" placeholder="Email" name="email" />
-                <label></label>
-                <p id="emailError" class="errormsg text-red-700"></p>
-              </div>
-              <div class="infield">
-                <input type="password" name="password" placeholder="Password" />
-                <label></label>
-                <p id="passError" class="errormsg text-red-700"></p>
-              </div>
-              <button class="btn w-full rounded-lg" type="submit">
-                Sign Up
-              </button>
-            </form>
-          </div>
-          <div class="form-container sign-in-container">
-            <form
-              class="h-full flex flex-col text-white items-center justify-center [&_input]:rounded-lg [&_input]:bg-[#1E2843]!"
-              id="loginForm"
-            >
-              <h1 class="font-bold text-white! text-4xl">Sign in</h1>
-              <span class="text-gray-400 my-4">or use your account</span>
-              <div class="infield">
-                <input type="email" placeholder="Email" name="email" />
-                <label></label>
-              </div>
-              <div class="infield">
-                <input type="password" placeholder="Password" />
-                <label></label>
-              </div>
-              <a href="#" class="forgot text-white!">Forgot your password?</a>
-              <button class="btn w-full rounded-lg">Sign In</button>
-            </form>
-          </div>
-          <div class="overlay-container" id="overlayCon">
-            <div class="overlay">
-              <div class="overlay-panel overlay-left">
-                <h1>Hello again!</h1>
-                <p>To keep in touch, please login with your credentials</p>
-                <button>Sign In</button>
-              </div>
-              <div class="overlay-panel overlay-right">
-                <h1>Hello again!</h1>
-                <p>Enter your credentials and start account with us</p>
-                <button id="signUpBtn ">Sign Up</button>
-              </div>
+<body>
+    <section class="auth-sec h-screen grid place-content-center overflow-hidden">
+        <div class="container max-w-[1400px] w-full" id="container">
+            <div class="authBox relative w-[850px] h-[500px] bg-[#081028] overflow-hidden">
+                <div class="form-container sign-up-container">
+                    <form
+                        class="h-full flex flex-col text-white items-center justify-center [&_input]:rounded-lg [&_input]:bg-[#141E38]!"
+                        id="registerForm" onsubmit="register(event)">
+                        <h1 class="font-bold text-white! text-4xl">Create Account</h1>
+                        <span class="text-gray-400 my-4">or use your email for registration</span>
+                        <div class="infield">
+                            <input type="text" name="fullName" placeholder="Name" />
+                            <p id="nameError" class="errormsg "></p>
+                        </div>
+                        <div class="infield">
+                            <input type="email" placeholder="Email" name="email" />
+                            <p id="emailError" class="errormsg "></p>
+                        </div>
+                        <div class="infield">
+                            <input type="password" name="password" placeholder="Password" />
+                            <p id="passError" class="errormsg "></p>
+                        </div>
+                        <button class="btn w-full rounded-lg" type="submit">
+                            Sign Up
+                        </button>
+                        <p id="userRegister" class="errormsg "></p>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form
+                        class="h-full flex flex-col text-white items-center justify-center [&_input]:rounded-lg [&_input]:bg-[#1E2843]!"
+                        id="loginForm" onsubmit="login(event)"">
+                        <h1 class=" font-bold text-white! text-4xl">Sign in</h1>
+                        <span class="text-gray-400 my-4">or use your account</span>
+                        <div class="infield">
+                            <input type="email" placeholder="Email" name="email" />
+                            <p id="loginEmail" class="errormsg "></p>
+                        </div>
+                        <div class="infield">
+                            <input type="password" name="password" placeholder="Password" />
+                            <p id="loginPass" class="errormsg "></p>
+                        </div>
+                        <a href="#" class="forgot text-white!">Forgot your password?</a>
+                        <button class="btn w-full rounded-lg">Sign In</button>
+                        <p id="userLogin" class="errormsg "></p>
+                    </form>
+                </div>
+                <div class="overlay-container" id="overlayCon">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Hello again!</h1>
+                            <p>To keep in touch, please login with your credentials</p>
+                            <button>Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello again!</h1>
+                            <p>Enter your credentials and start account with us</p>
+                            <button id="signUpBtn ">Sign Up</button>
+                        </div>
+                    </div>
+                    <button id="overlayBtn"></button>
+                </div>
             </div>
-            <button id="overlayBtn"></button>
-          </div>
         </div>
-      </div>
     </section>
     <script src="./script.js"></script>
-  </body>
+    <script src="./auth.js"></script>
+</body>
+
 </html>

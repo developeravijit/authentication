@@ -7,9 +7,11 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Mona Sans", sans-serif;
 }
+
 :root {
   --linear-grad: linear-gradient(to right, #c03535, #ff4b4b);
   --grad-clr1: #c03535;
@@ -44,12 +46,14 @@ body {
 input::placeholder {
   color: gray;
 }
+
 .auth-sec {
   /* background: linear-gradient(to right, #301E23, #55343B); */
   /* background-color: #5a556d; */
   /* background: url(../assets/signup-img.png) no-repeat center/cover; */
   position: relative;
 }
+
 .auth-sec::before {
   content: "";
   position: absolute;
@@ -57,9 +61,11 @@ input::placeholder {
   background: url(../assets/signup-img.png) no-repeat center/cover;
   /* background: url(../assets/Signin-gif.gif) no-repeat center/cover; */
   filter: blur(10px);
-  transform: scale(1.1); /* prevents edge cut after blur */
+  transform: scale(1.1);
+  /* prevents edge cut after blur */
   z-index: -1;
 }
+
 .container {
   padding: 15px;
   margin: 0 auto;
@@ -96,7 +102,9 @@ h1 {
 }
 
 .errormsg {
-  margin: 0 !important;
+  display: none;
+  margin: 10px 0 0 !important;
+  color: #775ada;
 }
 
 .social-container {
@@ -142,7 +150,7 @@ label {
   transition: width 0.3s ease;
 }
 
-input:focus ~ label {
+input:focus~label {
   width: 97%;
 }
 
@@ -255,9 +263,11 @@ p {
   border: none;
   background-color: transparent;
 }
+
 .overlay-right button {
   margin-right: 19px;
 }
+
 /* .right-panel-active .overlay-container {
   transform: translateX(-150%);
 } */
@@ -291,6 +301,7 @@ p {
 }
 
 @keyframes show {
+
   0%,
   50% {
     opacity: 0;
