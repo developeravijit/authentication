@@ -152,3 +152,12 @@ let login = async (event) => {
     console.log(error);
   }
 };
+
+const token = localStorage.getItem("token");
+const user = localStorage.getItem("userName");
+
+setInterval(() => {
+  if (token && user) {
+    window.location.href = "dashboard.html";
+  }
+}, 1000);
