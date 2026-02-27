@@ -9,11 +9,11 @@ const userName = document.getElementById("userName");
 // console.log("token", token);
 userName.textContent = user;
 
-setInterval(() => {
-  if (!token || !user) {
-    window.location.href = "index.html";
-  }
-}, 1000);
+if (!token || !user) {
+  window.location.href = "index.html";
+} else {
+  window.location.href = "dashboard.html";
+}
 
 let logout = () => {
   localStorage.removeItem("token");
