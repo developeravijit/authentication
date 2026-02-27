@@ -11,8 +11,6 @@ userName.textContent = user;
 
 if (!token || !user) {
   window.location.href = "index.html";
-} else {
-  window.location.href = "dashboard.html";
 }
 
 let logout = () => {
